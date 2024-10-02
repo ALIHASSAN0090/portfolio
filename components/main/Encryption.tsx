@@ -51,7 +51,7 @@ const Encryption = () => {
       </div>
 
       <div className="w-full flex items-start justify-center absolute">
-        <video
+      <video
           loop
           muted
           autoPlay
@@ -59,6 +59,11 @@ const Encryption = () => {
           preload="false"
           className="w-full h-auto"
           src="/encryption.webm/"
+          style={{
+            opacity: 0.8,
+            transition: "opacity 0.5s ease-in-out",
+            backgroundColor: "transparent" // Added this line
+          }}
         />
       </div>
     </div>

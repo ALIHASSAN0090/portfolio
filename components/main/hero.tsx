@@ -9,8 +9,12 @@ const Hero = () => {
                 muted
                 loop
                 className="rotate-180  
-                absolute  top-[-340px]
+                absolute  top-[-300px]
                   left-0 z-[1] w-full h-full object-cover"
+                style={{
+                    opacity: 0.8,
+                    transition: "opacity 0.5s ease-in-out"
+                }}
             >
                 <source src="/blackhole.webm" type="video/webm"/>
             </video>
@@ -20,3 +24,4 @@ const Hero = () => {
 }
 
 export default Hero;
+// top-[-340px]
